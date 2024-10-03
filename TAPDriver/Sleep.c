@@ -1,0 +1,57 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// Global including files.
+//
+// Including the files for the system.
+//
+// These including files are generally used in different operation system.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+#include "Global.h"
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Special including files.
+//
+// Including the files for the specifal operation system.
+//
+// These including files are used for the specifal operation system.
+// They are mainly concert about the management of pThread, synchronization, socket etc.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+//For windows.
+#ifdef _MICROSOFT_WINDOWS
+#include <windows.h>
+#endif
+
+//For linux.
+#ifdef _REDHAT_LINUX
+#include <unistd.h>
+#endif
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Sleep milliseconds.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+void SleepMilliseconds(_UINT32 nMilliseconds)
+{
+//For windows.
+#ifdef _MICROSOFT_WINDOWS
+
+	//Sleep
+	Sleep(nMilliseconds);
+
+#endif
+
+//For linux.
+#ifdef _REDHAT_LINUX
+
+	//Sleep
+	usleep(nMilliseconds * 1000);
+
+#endif
+}

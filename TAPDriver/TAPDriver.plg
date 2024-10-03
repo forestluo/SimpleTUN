@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TAPDriver - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1BA.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_MICROSOFT_WINDOWS" /Fp"Debug/TAPDriver.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\WORKSPACES\SimpleTUN\TAPDriver\Tunnel.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1BA.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1BB.tmp" with contents
+[
+/nologo /out:"Debug\TAPDriver.lib" 
+.\Debug\Buffer.obj
+.\Debug\Chain.obj
+.\Debug\Characater.obj
+.\Debug\Checksum.obj
+.\Debug\ClientSocket.obj
+.\Debug\Digital.obj
+.\Debug\Directory.obj
+.\Debug\Ethernet.obj
+.\Debug\Hex.obj
+.\Debug\IPHelper.obj
+.\Debug\Lock.obj
+.\Debug\Log.obj
+.\Debug\Print.obj
+.\Debug\Recorder.obj
+.\Debug\Registration.obj
+.\Debug\ServerSocket.obj
+.\Debug\SimpleClient.obj
+.\Debug\SimpleTime.obj
+.\Debug\Sleep.obj
+.\Debug\Socket.obj
+.\Debug\TAPDriver.obj
+.\Debug\Thread.obj
+.\Debug\Timeout.obj
+.\Debug\Timestamp.obj
+.\Debug\Tunnel.obj
+.\Debug\Watch.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1BB.tmp"
+<h3>Output Window</h3>
+Compiling...
+Tunnel.c
+Creating library...
+
+
+
+<h3>Results</h3>
+TAPDriver.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

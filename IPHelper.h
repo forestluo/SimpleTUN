@@ -1,0 +1,45 @@
+#ifndef _SIMPLE_IPHELPER_H
+#define _SIMPLE_IPHELPER_H
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Adapter functions.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+//Load adapters information list.
+extern _BOOL LoadAdaptersInformationList();
+//Unload adapters information list.
+extern void UnloadAdaptersInformationList();
+
+//Show adapters information list.
+extern void ShowAdaptersInformationList();
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Interface functions.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+//Load interface information list.
+extern _BOOL LoadInterfaceInformationList();
+//Unload interface information list.
+extern void UnloadInterfaceInformationList();
+
+//Show interface information list.
+extern void ShowInterfaceInformationList();
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Other functions.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+//Set network tunnel local address.
+extern _BOOL SetNetworkTunnelLocalAddress(NetworkTunnel* pTunnel);
+//Clear network tunnel local address.
+extern void ClearNetworkTunnelLocalAddress(NetworkTunnel* pTunnel);
+
+////////////////////////////////////////////////////////////////////////////////
+
+#endif //End of the head file !
